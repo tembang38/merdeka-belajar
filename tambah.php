@@ -6,31 +6,41 @@ include '../aset/header1.php';
         <div class="col-md-9">
             <div class="card">
                 <div class="card-header">
-                    <h2>Tambah Anggota</h2>
+                    <h2>Tambah Buku</h2>
                 </div>
                 <div class="card-body">
                     <form method="post" action="proses-tambah.php">
                         <div class="form-group">
-                            <label for="anggota">Nama Lengkap</label>
-                            <input type="text" class="form-control" name="nama" id="anggota" placeholder="Masukkan nama lengkap">
+                            <label for="judul">Judul</label>
+                            <input type="text" class="form-control" name="judul" id="judul" placeholder="Masukkan Judul buku">
                         </div>
                         <div class="form-group">
-                            <label for="kelas">Kelas</label>
-                            <input type="text" class="form-control" name="kelas" id="kelas" placeholder="Masukkan kelas">
-                            <small class="form-text text-muted">Contoh: XRPL2</small>
+                            <label for="penerbit">Penerbit</label>
+                            <input type="text" class="form-control" name="penerbit" id="penerbit" placeholder="Masukkan Nama penerbit">
                         </div>
                         <div class="form-group">
-                            <label for="telp">Nomor Telepon</label>
-                            <input type="text" class="form-control" name="telp" id="telp" placeholder="Masukkan nomor telepon">
-                            <small class="form-text text-muted">Contoh: 111-222-3333</small>
+                            <label for="pengarang">Pengarang</label>
+                            <input type="text" class="form-control" name="pengarang" id="pengarang" placeholder="Masukkan Nama pengarang">
                         </div>
                         <div class="form-group">
-                            <label for="username">Username</label>
-                            <input type="text" class="form-control" name="username" id="username" placeholder="Masukkan username">
+                            <label for="ringkasan">Ringkasan</label>
+                            <textarea class="form-control" name="ringkasan" id="ringkasan" placeholder="Masukkan Ringkasan Cerita"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Masukkan password">
+                            <label for="cover">Cover</label>
+                            <input type="text" class="form-control" name="cover" id="cover" placeholder="Masukkan Cover">
+                        </div>
+                        <div class="form-group">
+                            <label for="stok">Stok</label>
+                            <input type="number" class="form-control" name="stok" id="stok" placeholder="Masukkan jumlah stok">
+                        </div>
+                        <div class="form-group">
+                            <label for="id_Kategori">Id Kategori</label><br>
+                            <select name="id_kategori" id="sel">
+                                <option value="">Pilih Kategori</option>
+                                <option value="Fiksi">Fiksi</option>
+                                <option value="Non">Non Fiksi</option>
+                            </select>
                         </div>
                         <button type="submit" class="btn btn-primary" name="simpan">Simpan</button>
                     </form>
